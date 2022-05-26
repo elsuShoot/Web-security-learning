@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>HTML DOM Attributes</h1>
+<h2>The removedNamedItem() Method </h2>
+
+<input id="myInput" type="button" type="button"type="button" value="OK">
+
+<p>Click the button below to remove the type attribute of the input element above.</p>
+
+<button onclick="myFunction()">Try it</button>
+<p id="demo">aaa</p>
+<script>
+function myFunction() {
+  const nodeMap = document.getElementById("myInput").attributes;
+  nodeMap.removeNamedItem("type");
+  document.getElementById("demo").innerHTML=nodeMap.item[0];
+}
+</script>
+
+</body>
+</html>
